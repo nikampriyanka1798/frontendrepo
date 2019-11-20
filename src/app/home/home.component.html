@@ -1,0 +1,25 @@
+
+
+
+<button (click)="GoToRegister() "type="button" class="btn btn-primary">Add Record</button>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr >
+        <th>No</th><th>Name</th><th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employee">
+        <td>{{emp.no}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.address}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+<span>
+  {{message}}
+</span>
